@@ -3,7 +3,13 @@
 int factorial(int number)
 {
     // TODO:- Your logic here
-    return 0;
+    if (number < 0) return -1;
+    if (number == 0) return 1;
+    int result = 1;
+    for (int i = 1; i <= number; i++) {
+       result *= i;
+    }
+    return result;
 }
 
 // Note: Don't add any other printf statement which will impact test cases. 
